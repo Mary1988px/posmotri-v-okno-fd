@@ -125,7 +125,6 @@ ol {
 .search-form__checkbox-list {
   display: flex;
   inline-size: 212px;
-
   gap: 15px;
   align-items: flex-start;
 }
@@ -154,16 +153,6 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
   text-decoration: underline 1px solid #fff;
 }
 
-.search-form__submit-button:hover {
-  text-decoration: underline;
-
-}
-
-.search-form__submit-button:focus-visible {
-  outline: 1px solid #fff;
-  outline-offset: 1px;
-}
-
 button {
   font-family: "Fira Sans Condensed", sans-serif;
   border: 1px solid currentColor;
@@ -175,10 +164,14 @@ button {
   margin-top: 18px;
 }
 
-button:has(:focus) {
+button:focus {
   border: 1px solid #fff;
   outline: 1px solid #fff;
   outline-offset: 2px;
+}
+
+button:hover {
+  text-decoration: underline;
 }
 
 button:active {
